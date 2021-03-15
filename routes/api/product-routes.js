@@ -111,8 +111,8 @@ router.delete('/:id', (req, res) => {
     where: {
       id: req.params.id
     }
-  }).then(dbProduct => {
-    res.json(dbProduct);
+  }).then(dbProductData => {
+    res.json(dbProductData);
   });
 });
 
